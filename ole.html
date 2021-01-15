@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ole - NodeJS</title>
+    <link href="https://www.ole.com.ar/bbtfile/5050_20170523ldAO2E.png" rel="shortcut icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/css/estilos.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="ole.html"><img src="https://www.ole.com.ar/bbtfile/5050_20170523ldAO2E.png"
+                    alt="Diario Ole" width="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/aldosivi"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150910fTQkPo.png" alt="Aldosivi"
+                                width="40" title="Aldosivi"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/argentinos"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150910Ft4REQ.png" alt="Argentinos"
+                                width="40" title="Argentinos"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/arsenal"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150910MwkEid.png" alt="Arsenal" width="40"
+                                title="Arsenal"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/atletico-tucuman"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150911Wg1cmg.png" alt="Atletico Tucuman"
+                                width="40" title="Atletico Tucuman"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/banfield"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150910anjbZx.png" alt="Banfield"
+                                width="40" title="Banfield"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/boca-juniors"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20151006lZIWri.png" alt="Boca Juniors"
+                                width="40" title="Boca Juniors"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/central-cordoba-santiago-del-estero"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150911SQtf1x.png" alt="Central Cordoba"
+                                width="40" title="Central Cordoba"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/colon"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20151012i9t49j.png" alt="Colon" width="40"
+                                title="Colon"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/defensa-y-justicia"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150910b80gTH.png" alt="Defensa y Justicia"
+                                width="40" title="Defensa y Justicia"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/estudiantes"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150910wTT2Li.png" alt="Estudiantes"
+                                width="40" title="Estudiantes"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/gimnasia-y-esgrima"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150910pa2oiE.png" alt="Gimnasia"
+                                width="40" title="Gimnasia"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/godoy-cruz"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_201509109XrofE.png" alt="Godoy Cruz"
+                                width="40" title="Godoy Cruz"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/huracan"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_201509100iJeE6.png" alt="Huracan" width="40"
+                                title="Huracan"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/independiente"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20190108XqLXpP.png" alt="Independiente"
+                                width="40" title="Independiente"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/lanus"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150910IgU1UW.png" alt="Lanus" width="40"
+                                title="Lanus"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/newells-old-boys"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150911y0pjip.png" alt="Newells" width="40"
+                                title="Newells"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/patronato"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150911f4hMRX.png" alt="Patronato"
+                                width="40" title="Patronato"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/racing"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150911dTjI5k.png" alt="Racing" width="40"
+                                title="Racing"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/river-plate"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_201509113T2xh1.png" alt="River" width="40"
+                                title="River"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/rosario-central"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_201608247GTzZp.png" alt="Rosario Central"
+                                width="40" title="Rosario Central"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/san-lorenzo"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150911h6C1yF.png" alt="San Lorenzo"
+                                width="40" title="San Lorenzo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/talleres"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20151203LAFfIX.png" alt="Talleres"
+                                width="40" title="Talleres"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/union"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20150911UStfjL.png" alt="Union" width="40"
+                                title="Union"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ole.com.ar/velez"><img
+                                src="https://images.ole.com.ar/bbtfile/5012_20171219qldRGp.png" alt="Velez Sarfield"
+                                width="40" title="Velez Sarfield"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active"><a
+                    href="https://www.ole.com.ar/boca-juniors/eduardo-salvio-nivel-copa_0_V0K2E88Al.html"
+                    target="_blank">
+                    <img src="https://images.ole.com.ar/2021/01/14/fZd1tecpd_1000x472__1.jpg#1610667608932"
+                        class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>El bajón del Toto, ¿y con posibilidades de irse?</h1>
+                    <p>Eduardo Salvio comenzó la Libertadores siendo el goleador de Boca, pero en los últimos partidos
+                        se lo vio muy lejos de su mejor nivel. Y algunas situaciones podrían derivar en su alejamiento
+                        del club. Mirá...</p>
+                </div>
+            </div>
+            <div class="carousel-item"><a
+                    href="https://www.ole.com.ar/boca-juniors/tevez-futuro-boca-analiza_0_9iHOU0fpH.html"
+                    target="_blank">
+                    <img src="https://images.ole.com.ar/2021/01/14/4INLm3grr_1256x620__1.jpg" class="d-block w-100"
+                        alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Tevez quedó golpeado: ¿qué hará después de la final del domingo?</h1>
+                    <p>Carlitos está otra vez ante de decisión de seguir o no en Boca. Se le fue otra Copa, la cuarta
+                        desde su vuelta y la que creía la vencida. Así, tras la final en San Juan, lo va a definir.
+                        Tiene causas y cláusula para decir adiós.</p>
+                </div>
+            </div>
+            <div class="carousel-item"><a
+                    href="https://www.ole.com.ar/racing/juan-antonio-pizzi-nuevo-tecnico-racing_0_X0pijzgw6.html"
+                    target="_blank">
+                    <img src="https://images.ole.com.ar/2020/01/15/4SU5O5aV_1256x620__2.jpg#1610639091331"
+                        class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Confirmado: Juan Antonio Pizzi, nuevo DT de la Academia</h1>
+                    <p>Se cerró el acuerdo para que el ex San Lorenzo y selección chilena se siente en el banco de los
+                        de Avellaneda. En las próximas horas firmará el contrato.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <br>
+    <!-- Cards -->
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100 border-dark"><a
+                href="https://www.ole.com.ar/river-plate/leo-ponzio-candidato-vice-club-rosas_0_CFj_ixbUo.html"
+                target="_blank">
+                    <img src="https://images.ole.com.ar/2021/01/14/Bv8bEp8uu_1256x620__2.jpg#1610660522385"
+                        class="card-img-top" alt="...">
+                <div class="card-body text-success">
+                        <h3 class="card-title">Ponzio, entre su nuevo rol político y el retiro</h3>
+                    </a>
+                    <p class="card-text">El capitán de River será candidato a vicepresidente del Williams Kemmis, el
+                        club de Las Rosas que lo vio nacer, y hasta podría jugar ahí después de colgar los botines.
+                        ¿Será en junio o estirará su contrato?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100"><a
+                href="https://www.ole.com.ar/boca-juniors/tevez-gesto-santos-boca-copa_0_QOL5ySgpk.html"
+                target="_blank">
+                <img src="https://images.ole.com.ar/2021/01/14/LQUBKZQIZ_1256x620__1.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                        <h3 class="card-title">Los gestos de Tevez tras el 1 a 0 y contra Salvio en el 2 a 0</h3>
+                    </a>
+                    <p class="card-text">Carlitos tuvo una fuerte desazón luego del gol de Diego Pituca y luego del
+                        tanto de Soteldo reaccionó con el Toto. Mirá los videos...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100"><a
+                href="https://www.ole.com.ar/futbol-primera/lanus-banfield-sudamericana-maradona_0_74PVrD7Xy.html"
+                target="_blank">
+                <img src="https://images.ole.com.ar/2021/01/14/j8KtYUxdF_1256x620__1.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                        <h3 class="card-title">En el Sur está el agite</h3>
+                    </a>
+                    <p class="card-text">Con la clasificación de Lanús a la final de la Copa Sudamericana, se suma a un
+                        Banfield que también irá por un título, este domingo, en la definición de la Copa Diego Armando
+                        Maradona. Los de Zubeldía y los de Sanguinetti, a un paso de la gloria.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <BR></BR>
+
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Volver al inicio</a>
+            </p>
+            <p>Página creada con Bootstrap por Marcio Garozzo para ComIT NodeJS. Seguime en
+            <a href="https://www.linkedin.com/in/marcio-garozzo/" target="_blank"> LinkedIn</a> y en <a
+                    href="https://github.com/marciondg" target="_blank">Github</a>.</p>
+        </div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+<script src="Assets/js/main.js"></script>
+</body>
+
+</html>

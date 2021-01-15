@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-weight: bolder;
+}
+.card-title{
+    font-weight: bolder;
+    text-align: center;
+}
+a:link,a:visited{
+    color: black;
+}
+.card-subtitle{
+    text-align: left;
+    font-style: italic;
+}
+.card-body{
+    text-align: justify;
+    color: green;
+}
+p::selection{
+    color:grey;
+    background: orange;
+}
