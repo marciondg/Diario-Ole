@@ -1,11 +1,16 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
-h1{
-    font-weight: bolder;
+footer, footer a:link, footer a:visited{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
 }
 .card-title{
-    font-weight: bolder;
     text-align: center;
 }
 a:link,a:visited{
@@ -22,4 +27,25 @@ a:link,a:visited{
 p::selection{
     color:grey;
     background: orange;
+}
+
+.dropdown-menu {
+    margin-right:-10px;
+}
+
+.dropdown-menu > li {
+    display: inline-block;
+}
+
+#equipos{
+    justify-content: center;
+}
+#redes-sociales{
+    padding: 5px;
+    color: whitesmoke;
+}
+#redes-sociales svg{
+    width: 40px;
+    height: 40px;
+    padding: 0.5em;
 }
