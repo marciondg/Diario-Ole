@@ -35,7 +35,7 @@ function reemplazarParrafo(numero = "0", texto = "") {
     }
 }
 
-function reemplazarTexto(etiqueta="h1",numero = "0", texto = "") {
+function reemplazarTexto(etiqueta = "h1", numero = "0", texto = "") {
     if (texto === "") {
         console.log("No se ingreso texto")
     } else {
@@ -46,32 +46,33 @@ function reemplazarTexto(etiqueta="h1",numero = "0", texto = "") {
 
 /* Objetos */
 //1)
-function Fruta(nombre,precio,peso,cantidad){
+function Fruta(nombre, precio, peso, cantidad) {
     this.nombre = nombre;
     this.precio = precio;
     this.peso = peso;
     this.cantidad = cantidad;
 }
 //2)
-let banana = new Fruta("banana",100,3,10);
-let manzana = new Fruta("manzana",90,4,20);
-let melon = new Fruta("melon",200,8,5);
+let banana = new Fruta("banana", 100, 3, 10);
+let manzana = new Fruta("manzana", 90, 4, 20);
+let melon = new Fruta("melon", 200, 8, 5);
 
-let frutas = [banana,manzana,melon];
+let frutas = [banana, manzana, melon];
 
-function eliminarFruta(coleccionFrutas,posicion){
+function eliminarFruta(coleccionFrutas, posicion) {
     let frutasAux = [];
-    for (fruta of coleccionFrutas){
-        if(coleccionFrutas.indexOf(fruta) !=posicion){
+    for (fruta of coleccionFrutas) {
+        if (coleccionFrutas.indexOf(fruta) != posicion) {
             frutasAux.push(fruta);
         }
     }
     console.log(frutasAux);
 }
 
-let nombres = ["marcio","nicolas","david"];
-function recorrerArray(array){
-    for(let elementoArray of array){
+let nombres = ["marcio", "nicolas", "david"];
+
+function recorrerArray(array) {
+    for (let elementoArray of array) {
         console.log(elementoArray)
     }
 }
@@ -83,11 +84,50 @@ let pos = frutas.indexOf('Banana') // (pos) es la posición para abreviar
 // 1
 
 //Crear lista desordenada
-let armarLista = function(){
+let armarLista = function () {
     let ul = document.getElementById("lista-desordenada");
-    for(fruta of frutas){
+    for (fruta of frutas) {
         let li = document.createElement("li");
         li.appendChild(document.createTextNode(`${fruta.Nombre} ${fruta.Precio} ${fruta.Peso}`))
         ul.appendChild(li);
     }
 }
+
+/* ---------------- ----------------- */
+
+function sum(num1, num2) {
+    return num1 + num2;
+}
+
+function calcular(num1, num2, callback) {
+    return callback(num1, num2);
+}
+
+
+var episode;
+var episodes;
+function getEpisodes(url, callback) {
+    var xhttp;
+    xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            callback(this)
+        }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+}
+
+function cambiarTituloMessi(respuesta) {
+    episode = JSON.parse(respuesta.responseText);
+    episodes = episode.results;
+    let cardsNoticias = document.getElementsByClassName("card-title");
+    let cardMessi = cardsNoticias[2];
+    cardMessi.innerHTML = episodes[0].name;
+}
+/* 
+function parsearInfo(respuesta){
+    episode = JSON.parse(respuesta.responseText);
+    episodes =  episode.results;
+    return episodes;
+} */
