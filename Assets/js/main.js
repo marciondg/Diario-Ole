@@ -106,6 +106,7 @@ function calcular(num1, num2, callback) {
 
 var episode;
 var episodes;
+
 function getEpisodes(url, callback) {
     var xhttp;
     xhttp = new XMLHttpRequest();
