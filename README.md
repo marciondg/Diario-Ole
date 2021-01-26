@@ -1,5 +1,5 @@
 # ComIT CursoNodeJS Clase 5
 
 Practica de Bootstrap: Se realiza pagina responsive simil Ole. Se busca copiar el Nav de dicha pagina, y se agregan noticias.
-main.js -> Primeros scripts
-scriptNoticias.js -> Scripts para obtener noticias mediante API
+- main.js -> Primeros scripts
+- scriptNoticias.js -> Scripts para obtener noticias mediante API
