@@ -1,8 +1,8 @@
 /* Noticias */
 
-var apiKey = "ec96551c0b2b4ccd8e791bd60d9a9bb2";
-var urlDeportes = "https://api.jornalia.net/api/v1/articles?apiKey=ec96551c0b2b4ccd8e791bd60d9a9bb2&providers=Clarin%2CLaNacion&categories=DEPORTES";
-var urlCoronaVirus = "https://api.jornalia.net/api/v1/articles?apiKey=ec96551c0b2b4ccd8e791bd60d9a9bb2&search=coronavirus&providers=Clarin"
+const APIKEY = "ec96551c0b2b4ccd8e791bd60d9a9bb2";
+var urlDeportes = `https://api.jornalia.net/api/v1/articles?apiKey=${APIKEY}&providers=Clarin%2CLaNacion&categories=DEPORTES`;
+var urlCoronaVirus = `https://api.jornalia.net/api/v1/articles?apiKey=${APIKEY}&search=coronavirus&providers=Clarin`
 
 function obtenerNoticias(url, callback) {
     var response;
